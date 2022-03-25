@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Learn JS</title>
+</head>
+
+<body>
+    <div class="top centre">
+        <div class="top__content">
+            <h1 class="top__title">Добро пожаловать на мой сайт!</h1>
+            <p class="top__description">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+                <strong>поехали</strong>
+                и <strong>приступай</strong>
+            </p>
+            <div class="top__btn">Поехали!</div>
+        </div>
+    </div>
+    <div class="catalog centre">
+        <ul class="catalog__box">
+            <li class="catalog__item"><a class="catalog__link" href="#">Игра 1</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Игра 2</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#">Игра 3</a></li>
+        </ul>
+    </div>
+    <div class="seasons game centre">
+        <div class="game__content">
+            <h2 class="game__title">Времена года!</h2>
+            <p class="game__description">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
+                какому времени года он относится</p>
+            <div class="game__btn" onclick="whatIsSeasons();">Играть!</div>
+        </div>
+        <div class="game__img-box">
+            <div class="game__img"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+@import "vars";
+@import "blocks";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: $textColor;
+}
+
+.top {
+  @extend .img;
+  background-image: url("../img/top-bg.jpg");
+
+  &__content {
+    padding-top: 220px;
+  }
+
+  &__title {
+    @extend .title;
+    margin-bottom: $gap;
+    max-width: 788px;
+  }
+
+  &__description {
+    @extend .description;
+    max-width: 480px;
+    margin-bottom: 44px;
+  }
+
+  &__btn {
+    @extend .btn;
+  }
+}
+
+.catalog {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-color: $bgColor;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $gap;
+  }
+
+  &__item {
+    @extend .img;
+    @extend .transition;
+    width: 376px;
+    height: 300px;
+    padding-bottom: $gap;
+    padding-left: $gap;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 4px solid rgba(0, 0, 0, 0);
+
+    &:nth-of-type(1) {
+      background-image: url("../img/games/cover-1.png");
+    }
+
+    &:nth-of-type(2) {
+      background-image: url("../img/games/cover-2.png");
+    }
+
+    &:nth-of-type(3) {
+      background-image: url("../img/games/cover-3.png");
+    }
+
+    &:hover {
+      @extend .scale;
+      border: 4px solid #44d2ff;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $textColor;
+  }
+}
+
+.game {
+  background-color: $bgColor;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+  }
+
+  &__title {
+    @extend .heading;
+  }
+
+  &__description {
+    @extend .description;
+    max-width: 584px;
+  }
+
+  &__btn {
+    @extend .btn;
+  }
+
+  &__img {
+    &-box {
+      width: 485px;
+      height: 333px;
+    }
+
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/games/seasons.png");
+  }
+}
+
+@media (max-width: 1439px) {
+  .centre {
+    padding-left: calc(50% - 358px);
+    padding-right: calc(50% - 358px);
+  }
+
+  .catalog {
+    &__item {
+      padding-left: 16px;
+      width: 342px;
+    }
+  }
+}
+
+@media (max-width: 747px) {
+  .centre {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .top,
+  .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap;
+
+    &__content {
+      padding-top: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 39px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__img {
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &-box {
+        width: calc(100% - 32px);
+      }
+    }
+  }
+
+  .game {
+    height: 654px;
+  }
+
+  .catalog__box {
+    justify-content: center;
+  }
+}

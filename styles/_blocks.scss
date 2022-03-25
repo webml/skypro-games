@@ -1,0 +1,57 @@
+.centre {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+
+  & strong {
+    font-weight: 700;
+  }
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  width: fit-content;
+  padding: 14px 74px;
+  border-radius: 30px;
+  background-color: #9c0332;
+  @extend .transition;
+
+  &:hover {
+    @extend .scale;
+    background-color: #eb443f;
+  }
+}
+
+.img {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.scale {
+  transform: scale(1.05);
+}
+
+.transition {
+  transition: all 0.3s;
+}
