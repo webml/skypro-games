@@ -23,19 +23,30 @@
             <div class="top__btn">Поехали!</div>
         </div>
     </div>
-    <div class="catalog centre">
+    <div class="catalog centre" id="menu">
         <ul class="catalog__box">
-            <li class="catalog__item"><a class="catalog__link" href="#">Игра 1</a></li>
-            <li class="catalog__item"><a class="catalog__link" href="#">Игра 2</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#first__game">Игра 1</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#second__game">Игра 2</a></li>
             <li class="catalog__item"><a class="catalog__link" href="#">Игра 3</a></li>
         </ul>
     </div>
-    <div class="seasons game centre">
+    <div class="seasons game centre" id="first__game">
         <div class="game__content">
             <h2 class="game__title">Времена года!</h2>
             <p class="game__description">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
                 какому времени года он относится</p>
-            <div class="game__btn" onclick="whatIsSeasons();">Играть!</div>
+            <div class="game__btn" onclick="guessTheSeason();">Играть!</div>
+        </div>
+        <div class="game__img-box">
+            <div class="game__img"></div>
+        </div>
+    </div>
+    <div class="members game centre" id="second__game">
+        <div class="game__content">
+            <h2 class="game__title">Запомни слова</h2>
+            <p class="game__description">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <div class="game__btn" onclick="">Играть!</div>
         </div>
         <div class="game__img-box">
             <div class="game__img"></div>

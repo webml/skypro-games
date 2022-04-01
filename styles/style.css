@@ -188,12 +188,19 @@ body {
 .game__img {
   width: 100%;
   height: 100%;
-  background-image: url("../img/games/seasons.png");
 }
 
 .game__img-box {
   width: 485px;
   height: 333px;
+}
+
+.seasons .game__img {
+  background-image: url("../img/games/seasons.png");
+}
+
+.members .game__img {
+  background-image: url("../img/games/members.png");
 }
 
 @media (max-width: 1439px) {
