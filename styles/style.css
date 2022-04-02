@@ -203,10 +203,23 @@ body {
   background-image: url("../img/games/members.png");
 }
 
+.members {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 @media (max-width: 1439px) {
   .centre {
     padding-left: calc(50% - 358px);
     padding-right: calc(50% - 358px);
+  }
+  .members {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .catalog__item {
     padding-left: 16px;

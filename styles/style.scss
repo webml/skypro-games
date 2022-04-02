@@ -143,12 +143,18 @@ body {
   background-image: url("../img/games/members.png");
 }
 
+.members {
+  flex-direction: row-reverse;
+}
+
 @media (max-width: 1439px) {
   .centre {
     padding-left: calc(50% - 358px);
     padding-right: calc(50% - 358px);
   }
-
+  .members {
+    flex-direction: row;
+  }
   .catalog {
     &__item {
       padding-left: 16px;
