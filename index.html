@@ -27,10 +27,10 @@
         <ul class="catalog__box">
             <li class="catalog__item"><a class="catalog__link" href="#first__game">Игра 1</a></li>
             <li class="catalog__item"><a class="catalog__link" href="#second__game">Игра 2</a></li>
-            <li class="catalog__item"><a class="catalog__link" href="#">Игра 3</a></li>
+            <li class="catalog__item"><a class="catalog__link" href="#third__game">Игра 3</a></li>
         </ul>
     </div>
-    <div class="seasons game centre" id="first__game">
+    <div class="game seasons centre" id="first__game">
         <div class="game__content">
             <h2 class="game__title">Времена года!</h2>
             <p class="game__description">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
@@ -41,7 +41,7 @@
             <div class="game__img"></div>
         </div>
     </div>
-    <div class="members game centre" id="second__game">
+    <div class="game members centre" id="second__game">
         <div class="game__content">
             <h2 class="game__title">Запомни слова</h2>
             <p class="game__description">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
@@ -52,6 +52,18 @@
             <div class="game__img"></div>
         </div>
     </div>
+    <div class="game enigma centre" id="third__game">
+        <div class="game__content">
+            <h2 class="game__title">Игра в загадки</h2>
+            <p class="game__description">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не
+                правильный ответ, то компьютер даст вам
+                подсказку. У вас будет три попытки и две подсказки.</p>
+            <div class="game__btn" onclick="getEnigma();">Играть!</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Все права защищены</p>
+    </footer>
     <script src="./index.js"></script>
 </body>
 

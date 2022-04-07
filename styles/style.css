@@ -41,7 +41,7 @@
   background-color: #eb443f;
 }
 
-.img, .top, .catalog__item {
+.img, .top, .catalog__item, .enigma {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,6 +201,29 @@ body {
 
 .members .game__img {
   background-image: url("../img/games/members.png");
+}
+
+.enigma {
+  background-image: url("../img/games/enigma_bg.jpg");
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.enigma .game__content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  background-color: #000915;
+  padding: 32px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .members {

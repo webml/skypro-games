@@ -74,3 +74,42 @@ function rememberWord() {
     return;
   }
 }
+
+const getEnigma = () => {
+  const enigma = {
+    answer: "Свеча",
+    quest:
+      "Моя жизнь может быть измерена в часах. Я служу, когда уменьшаюсь. Когда я тонкая, я быстрая. Когда я толстая, я медленная. Ветер мой враг. Кто я?",
+    hint1: "Тело снаружи, рубашка внутри.",
+    hint2: "Днём сплю, ночью гляжу, утром умираю.",
+  };
+
+  let t = 3;
+  let answer = enigma.answer.toUpperCase();
+
+  console.log(answer);
+  do {
+    let answerUser = prompt(enigma.quest);
+    answerUser = answerUser.toUpperCase();
+
+    if (t > 0 && answer === answerUser) {
+      alert("Вы угадали!");
+      return;
+    }
+
+    t--;
+
+    if (t == 2) {
+      alert(`Подсказка:\n${enigma.hint1}`);
+    }
+
+    if (t == 1) {
+      alert(`Подсказка:\n${enigma.hint2}`);
+    }
+
+    if (t == 0) {
+      alert("Вы проиграли");
+      return;
+    }
+  } while (t !== 0);
+};
