@@ -94,6 +94,11 @@ body {
   margin-bottom: 44px;
 }
 
+.top__btn {
+  display: block;
+  color: #fff;
+}
+
 .catalog {
   padding-top: 128px;
   padding-bottom: 128px;

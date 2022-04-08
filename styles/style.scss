@@ -41,6 +41,8 @@ body {
 
   &__btn {
     @extend .btn;
+    display: block;
+    color: $textColor;
   }
 }
 
