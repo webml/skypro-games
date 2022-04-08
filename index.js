@@ -51,7 +51,7 @@ function rememberWord() {
     lastWord.toLowerCase() == word[word.length - 1].toLowerCase()
   ) {
     if (confirm("Вы угадали оба слова, хотите сыграть ещё раз?")) {
-      remember();
+      rememberWord();
     } else {
       return;
     }
@@ -69,7 +69,7 @@ function rememberWord() {
   }
 
   if (confirm("Вы не угадали, хотите сыграть ещё раз?")) {
-    remember();
+    rememberWord();
   } else {
     return;
   }
