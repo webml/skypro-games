@@ -62,7 +62,7 @@ function rememberWord() {
     lastWord.toLowerCase() == word[word.length - 1].toLowerCase()
   ) {
     if (confirm("Вы были близки к победе! Хотите сыграть ещё раз?")) {
-      remember();
+      rememberWord();
     } else {
       return;
     }
